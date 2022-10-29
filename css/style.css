@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.900);
+}
+
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    width: 50px;
+    border-radius: 10px;
+    box-sizing: initial;
+    border-left: 7px solid black;
+    border-right: 7px solid black;
+    cursor: pointer;
+    background: rgba(11, 110, 224, 0.205);
+    transition: width 0.5s;
+    overflow: hidden;
+    transition: width 0.8s ease;
+    z-index: 999999;
+}
+
+.navbar:hover {
+    width: 300px;
+    background-color: rgb(16, 20, 10);
+}
+
+.navbar ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+
+.navbar ul li .active {
+    background: white;
+}
+
+.navbar ul li .active a {
+    color: #333;
+}
+
+.navbar ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.logo-img {
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+    opacity: 0;
+    transition: all;
+    transition-duration: 1s;
+}
+
+.navbar:hover img {
+    opacity: 1;
+
+}
+
+.nav-titel {
+    color: yellowgreen;
+    padding-left: 30px;
+    padding-top: 20px;
+    font-weight: 900;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+}
+
+.icon {
+    color: yellowgreen;
+
+    position: relative;
+    right: 10px;
+    top: 200px;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.navbar:hover .icon {
+    top: -3px;
+    opacity: 1;
+}
+
+.navbar ul li a .icon fa-solid {
+    font-size: 1.5em;
+}
+
+.title {
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    font-weight: 500;
+    left: 600px;
+    transition: all 1s;
+}
+
+.navbar:hover .title {
+    left: -10px;
+
+}
+
+.nav-social-item {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    font-weight: lighter;
+    color: lavender;
+    margin-top: 10px;
+    font-size: small;
+    text-align: left;
+    opacity: 0;
+    transition: all 1s 0.3s;
+    
+}
+.navbar:hover .nav-social-item{
+    opacity: 1;
+}
+
+.navbar ul li .active {
+    background: white;
+}
+
+.layer {
+
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* //..CONTENT..// */
+.content {
+    background-color: rgb(218, 207, 210);
+    width: 300vh;
+    height: 80vh;
+
+}
+
+.food-card {
+    cursor: pointer;
+}
+
+.food-desc {
+    position: relative;
+    bottom: 78%;
+    opacity: 0;
+    text-align: center;
+    height: 78%;
+    overflow: hidden;
+    text-align: center;
+    transition: opacity 1s;
+
+}
+
+.food-card:hover .food-desc {
+    opacity: 0.8;
+
+    backdrop-filter: blur;
+}
+
+.right-sec {
+    text-align: start;
+}
+
+span {
+    font-weight: bolder;
+}
+
+.recipes-content {
+    background-color: beige;
+    border-radius: 10%;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.container {
+    margin-left: 80px;
+    margin-top: 30px;
+}

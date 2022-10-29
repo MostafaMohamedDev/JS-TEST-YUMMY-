@@ -1,0 +1,17 @@
+.right-sec{
+    text-align: start;
+}
+span{
+    font-weight: bolder;
+}
+
+.recipes-content{
+    background-color: beige;
+    border-radius: 10%;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+body{
+    background-color: black;
+}

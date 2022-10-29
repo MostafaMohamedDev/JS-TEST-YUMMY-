@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="css/serch.css" />
+</head>
+
+<body>
+    
+    <div class="container text-center p-5">
+        <div class="row">
+            <div class="navbar col-lg-2 ">
+                <ul>
+                  <li class="list active">
+                    <a href="file:///E:/monday/index.html">
+                      <span class="nav-img">
+                        <img class="logo-img" src="images/yum.png" alt="">
+                        <span class=" nav-titel">YUMMAY</span>
+                      </span>
+                    </a>
+                  </li>
+                  <br>
+                  <br>
+                  <br>
+                  <li class="list">
+                    <a href="file:///E:/monday/search-html/search.html">
+                      <span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                      <span class="title">Search</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="list">
+                    <a href="file:///E:/monday/category-html/category.html">
+                      <span class="icon"><i class="fa-solid fa-utensils"></i></span>
+      
+                      <span class="title">Categories</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="list">
+                    <a href="file:///E:/monday/area-html/area.html">
+                      <span class="icon"><i class="fa-solid fa-location-pin"></i></span>
+      
+                      <span class="title">Area</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="list">
+                    <a href="#">
+                      <span class="icon"><i class="fa-solid fa-bowl-food"></i></span>
+      
+                      <span class="title">Ingredients</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="list">
+                    <a href="file:///E:/monday/contact-html/contact.html?">
+                      <span class="icon"><i class="fa-solid fa-address-book"></i></span>
+      
+                      <span class="title">Contact Us</span>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+                <div class="nav-social-item">
+
+                  <a><i class="fab fa-facebook-f"></i></a>
+                  <a><i class="fab fa-twitter"></i></a>
+                  <a><i class="fas fa-globe"></i></a>
+                  <div class="pt-3">
+                    <span>Copyright Â© 2019 All Rights Reserved.</span>
+                  </div>
+      
+                </div>
+              </div>
+
+            <div class="col-lg-6">
+                <input id="name-input" onkeyup="searchByName()" class="search-input" type="Search By Name" placeholder="Search By Name">
+                <hr class="text-light">
+            </div>
+            <div class="col-lg-6">
+                <input id="letter-input" onkeyup="searchByLetter()" class="search-input" type="Search By First Leter.." placeholder="Search By First Leter..">
+                <hr class="text-light">
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-5 mt-5 h-100 ">
+        <div id="meals-container" class="row overflow-hidden ">
+        </div>
+    </div>
+
+
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="search.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Details</title>
+    <head>
+        <link rel="stylesheet" href="../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/all.min.css" />
+        <link rel="stylesheet" href="css/styleDetails.css" />
+      </head>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+
+
+  <div class="container ">
+    <div class="row">
+      <div class="left-sec col-lg-4">
+        <img id="meal-image" class="w-100 h-80 " src="images/3.jpg" alt="">
+        <h6 id="meal-title" class="left-title fs-1 text-light">Corba</h6>
+      </div>
+      <div class="right-sec col-lg-8 text-decoration-s">
+        <h5 id="meal-instruction" class="right-title text-light">Instructions</h5>
+        <p id="meal-pargraf" class="right-title text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque libero
+          aspernatur voluptas id quibusdam minima!
+        </p>
+
+        <div  class="d-flex info ">
+          <p class="text-light"> <span>Area :</span></p>
+          <p id="meal-area" class="text-light ps-2">Turkia</p>
+        </div>
+        <div  class="d-flex info ">
+          <p class="text-light"> <span>Category :</span></p>
+          <p id="meal-category" class="text-light ps-2">side</p>
+        </div>
+
+        <p class="fw-bolder text-light fs-2 ">Recipes :</p>
+        <div id="meal-recipes-container" class="Recipes d-flex flex-wrap"></div>
+        <p class="fw-bolder text-light fs-2">Tags :</p>
+        <div id="meal-tags-container" class="Recipes d-flex flex-wrap"></div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+    
+  <script src="../js/jquery-3.6.1.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="jsDetails.js"></script>
+</body>
+</html>
